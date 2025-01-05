@@ -16,10 +16,14 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 100vh;
+}
+
+#banner {
     background-image: url("banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 header {
@@ -40,19 +44,63 @@ h1 {
     line-height: 1.2; /* Improves readability */
 }
 
+#music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures centering on smaller screens */
+}
+
+.container-iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+
+
+
+h2 {
+    color: rgb(147, 32, 32);
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 1; /* Improves readability */
+}
+
 nav {
     height: 30%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 ul {
     display: flex;
-    justify-content: space-around;
     width: 100%;
     margin-bottom: 40px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     padding: 0;
+    width: 40%;
+}
+
+#list1 {
+    justify-content: flex-start;
+   
+}
+
+#list2 {
+    justify-content: flex-end;
 }
 
 li {
@@ -75,6 +123,8 @@ a {
 a:hover {
     color: #50c4d9; /* Adds a hover effect */
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {
