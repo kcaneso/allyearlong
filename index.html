@@ -1,55 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-		<title>allyearlong</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" href="main.css" />
+<html lang="en">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AllYearLong Band</title>
+  <link rel="stylesheet" href="styles.css">
 
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        
-        
-	</head>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <div class="wrapper">
-            <div class="container" id="banner">
-                <header>
-                    <h1>allyearlong</h1>
-                </header>
-                <nav>
-                    <ul id="list1">
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Merch</a></li>
-                    </ul>
-                    <ul id="list2">
-                        <!-- Add font awesome icons -->
-                        <li><a href="#" class="fa fa-facebook"></a></li>
-                        <li><a href="#" class="fa fa-instagram"></a></li>
-                    </ul>
-                </nav>
-            </div> 
-            
-            <div class="container" id="music">
-                <div class="container-head">
-                    <h2>This is Not the End</h2>
+<body>
+  <!-- Section 1: Parallax Background -->
+  <section class="parallax" id="background1">
+    <div class="content" id="banner">
+        <h1>allyearlong</h1>
+        <ul id="list1">
+            <li><a href="#releases">Music</a></li>
+            <li><a href="#merch">Merch</a></li>
+        </ul>
+        <ul id="list2">
+            <li><a href="https://www.facebook.com/allyearlongband" class="fa fa-facebook" target="_blank"></a></li>
+            <li><a href="https://www.instagram.com/allyearlongband" class="fa fa-instagram" target="_blank"></a></li>
+        </ul>
+    </div>
+  </section>
 
-                </div>
-                <div class="container-iframe" id="container-top">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/51CZQ0eKEaAWolCMXrDgRU?utm_source=generator&theme=0" width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-                <div class="container-iframe" id="container-bottom">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3FGAaWQvR0tXdrBRgGwuSb?utm_source=generator&theme=0" width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1ThxswMSvyfCYOcS5LpCl1?utm_source=generator&theme=0" width="60%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
+  <!-- Section 2: Regular Section -->
+  <section class="container">
+    <div class="content" id="merch"> 
+        <h2>Merch Available Now</h2>
+        <div class="merch-container">
+            <div class="image-container">
+                <img src="allyearlong-shirt1.png" alt="AllYearLong Shirt">
+                <p>AllYearLong Shirt</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="image-container">
+                <img src="insictbh-shirt1.png" alt="INSICTBH Shirt">
+                <p>INSICTBH Shirt</p>
+                <button>Shop Now</button>
             </div>
         </div>
+        
+    </div>
+  </section>
 
-    </body>
+  <!-- Section 3: Regular Section -->
+  <section class="container" id="container3">
+    <div class="content" id="releases">
+        <h2>Realeases</h2> 
+        <div class="releases-container">
+            <div class="image-container">
+                <img src="end.png" alt="This Is Not The End by allyearlong">
+                <p>This Is Not The End</p>
+                <button><a href="https://open.spotify.com/track/51CZQ0eKEaAWolCMXrDgRU?si=3912f7d055f54d7e" target="_blank">Stream</a></button>
+              </div>
+              <div class="image-container">
+                <img src="pipol.png" alt="People I Hate by allyearlong">
+                <p>People I Hate</p>
+                <button><a href="https://open.spotify.com/track/3FGAaWQvR0tXdrBRgGwuSb?si=7d06c3ded61c4411" target="_blank">Stream</a></button>
+              </div>
+              <div class="image-container">
+                <img src="insictbh.png" alt="I'm Not Stuck I Chose To Be Here by allyearlong">
+                <p>I'm Not Stuck I Chose To Be Here</p>
+                <button><a href="https://open.spotify.com/track/1ThxswMSvyfCYOcS5LpCl1?si=7ccf04a20f7c4728" target="_blank">Stream</a></button>
+              </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Parallax Background -->
+  <section class="parallax" id="background2">
+    <div class="content"> </div>
+  </section>
+
+  <footer>
+    <p>allyearlong</p>
+    <p>Vancouver British Columbia Canada</p>
+  </footer>
+
+</body>
 </html>

@@ -1,0 +1,175 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+
+  /* Basic styling for body and layout */
+  body {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    background-color: #1a1918;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #80f0ff;
+  }
+
+  a:hover {
+    color: #50c4d9; /* Adds a hover effect */
+  }
+
+ 
+
+  /* Parallax Section Styling */
+  .parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #1a1918;
+    height: 80vh;
+    padding-top: 50px;
+  }
+  
+  #background1 {
+    background-image: url('banner.jpg');
+  }
+  
+  #background2 {
+    background-image: url('aylphoto.jpeg');
+  }
+  
+
+  /* Section Styling */
+
+  .content {
+    color: #80f0ff;
+    text-align: center;
+    max-width: 1200px;
+    height: 90%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  
+
+          /* Banner */
+
+   #banner {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr)
+  }
+
+  h1 {
+    font-size: 10rem;
+    grid-area: 3 / 1 / 4 / 4 ;
+  }
+
+  #list1, #list2 {
+    font-size: 3rem;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  
+  #list1 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  #list2 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+          /* Merch */
+
+  h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .merch-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .image-container {
+    width: 50%;
+  }
+  
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  button {
+    color: #80f0ff;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  
+
+        /* Realeases */
+
+  .releases-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #container3 {
+    height: 75vh;
+    border-bottom: 2px solid #80f0ff;
+    border-top: 2px solid #80f0ff;
+  }
+
+  #releases {
+    max-width: 1600px;
+  }
+
+  /* Footer Styling */
+  footer {
+    background-color: #1a1918;
+    color: #80f0ff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  
+
+
+  
