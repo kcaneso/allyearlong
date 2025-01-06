@@ -14,9 +14,10 @@
     font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
+    font-optical-sizing: auto;
     text-transform: uppercase;
     line-height: 1.2;
-    background-color: #1a1918;
+    background-color: #090a0e;
   }
 
   li {
@@ -25,14 +26,12 @@
 
   a {
     text-decoration: none;
-    color: #80f0ff;
+    color: #fbdc6a;
   }
 
   a:hover {
-    color: #50c4d9; /* Adds a hover effect */
+    color: #b12b24; /* Adds a hover effect */
   }
-
- 
 
   /* Parallax Section Styling */
   .parallax {
@@ -44,41 +43,42 @@
     height: 100vh;
   }
 
-  .container {
-    background-color: #1a1918;
-    height: 80vh;
-    padding-top: 50px;
-  }
-  
   #background1 {
     background-image: url('banner.jpg');
   }
   
   #background2 {
-    background-image: url('aylphoto.jpeg');
+    background-image: url('footer.jpg');
+  }
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white
   }
   
-
   /* Section Styling */
 
   .content {
-    color: #80f0ff;
+    color: #fbdc6a;
     text-align: center;
     max-width: 1200px;
-    height: 90%;
+    height: 70%;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
   }
   
 
           /* Banner */
 
-   #banner {
+  #banner {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr)
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
   }
 
   h1 {
+    
     font-size: 10rem;
     grid-area: 3 / 1 / 4 / 4 ;
   }
@@ -97,6 +97,28 @@
     grid-area: 4 / 3 / 5 / 4;
   }
 
+          /* Out Now */
+
+  #outnow h2 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    color: #b12b24;
+  }
+  #outnow-normal { 
+    font-size: 12rem;
+    line-height: 0.8;
+  }
+
+  #outnow-bold {
+    font-size: 17rem;
+    line-height: 0.4;
+    padding-bottom: 50px;
+  }
+
+  #outnow h2:hover {
+    color: #760504;
+  }
+  
           /* Merch */
 
   h2 {
@@ -114,6 +136,7 @@
 
   .image-container {
     width: 50%;
+    margin: 10px;
   }
   
   img {
@@ -125,20 +148,35 @@
     font-size: 1.5rem;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-weight: 400;
+    text-transform: none;
+    color: white;
+  }
+  
+  button a {
+    color: white;
+  }
+
+  button a:hover {
+    color: #fbdc6a;
   }
 
   button {
-    color: #80f0ff;
+    color: white;
+    background-color: #090a0e;
     font-size: 1rem;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    padding-left: 20px;
-    padding-right: 20px;
-    
+    padding: 8px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
   }
-  
+
+  button:hover {
+    border: 1px solid #fbdc6a
+  }
 
         /* Realeases */
 
@@ -147,29 +185,116 @@
     justify-content: space-around;
   }
 
-  #container3 {
-    height: 75vh;
-    border-bottom: 2px solid #80f0ff;
-    border-top: 2px solid #80f0ff;
-  }
-
+  
   #releases {
     max-width: 1600px;
   }
 
   /* Footer Styling */
   footer {
-    background-color: #1a1918;
-    color: #80f0ff;
+    background-color: #090a0e;
+    color: #fbdc6a;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+  }
+
+  footer .left {
+    display: flex;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  footer .right {
+    display: flex;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
   }
 
   footer p {
     font-size: 1rem;
+    color: #fbdc6a;
+    margin: 10px;
   }
 
   
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  h1 {
+      font-size: 8rem;
+  }
 
-  
+  #list1, #list2 {
+      font-size: 2rem;
+  }
+
+  #outnow-normal {
+      font-size: 10rem;
+  }
+
+  #outnow-bold {
+      font-size: 14rem;
+  }
+
+  .merch-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image-container {
+      width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 6rem;
+  }
+
+  #list1, #list2 {
+      font-size: 1.5rem;
+  }
+
+  #outnow-normal {
+      font-size: 8rem;
+  }
+
+  #outnow-bold {
+      font-size: 10rem;
+  }
+
+  .merch-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 4rem;
+  }
+
+  #list1, #list2 {
+      font-size: 1rem;
+  }
+
+  #outnow-normal, #outnow-bold {
+      font-size: 6rem;
+      line-height: 1;
+  }
+
+  .image-container img {
+      max-width: 100%;
+  }
+}
