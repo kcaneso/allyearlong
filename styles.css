@@ -53,6 +53,13 @@
     border-bottom: 1px solid white;
     border-top: 1px solid white
   }
+
+  #container1 {
+    background-image: url("end.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
   /* Section Styling */
 
@@ -100,11 +107,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-  }
-
-  #outnow-new {
-    font-size: 7rem;
-    color: #fbdc6a
   }
 
   #outnow-normal {
