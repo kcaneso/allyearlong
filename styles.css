@@ -20,11 +20,6 @@
     background-color: #090a0e;
   }
 
-  li {
-    list-style: none;
-    margin: 0 20px;
-  }
-
   a {
     text-decoration: none;
     color: #fbdc6a;
@@ -74,69 +69,70 @@
           /* Banner */
 
   #banner {
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90%;
   }
 
   h1 {
-    font-size: clamp(4rem, 8vw, 10rem); /* Dynamically scales font size */
-    grid-area: 3 / 1 / 4 / 5;
+    font-size: 10rem;
     text-align: center; /* Ensures proper alignment */
     overflow-wrap: normal; /* Prevents breaking of words */
     white-space: normal; /* Allows text wrapping */
     word-break: normal; /* Prevents breaking words in the middle */
   }
 
-  #list1, #list2 {
-    font-size: 3rem;
+  nav {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-  }
-  
-  #list1 {
-    grid-area: 4 / 1 / 5 / 3;
-    justify-content: center;
+    margin-top: 400px;
   }
 
-  #list2 {
-    grid-area: 4 / 3 / 5 / 5;
-    justify-content: center;
+  h3 {
+    font-size: 3rem;
   }
+
 
           /* Out Now */
-  
+
   #outnow {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
 
-  #outnow h2 {
+  #outnow-new {
+    font-size: 7rem;
+    color: #fbdc6a
+  }
+
+  #outnow-normal {
     font-family: "Roboto", serif;
     font-weight: 900;
-    color: #b12b24;
-    line-height: 0.6;
-  }
-
-  #outnow-normal { 
+    line-height: 0.6; 
     font-size: 12rem;
-    padding-top: 20px;
+    color: #b12b24;
   }
 
   #outnow-bold {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    line-height: 0.6;
     font-size: 17rem;
-    padding-bottom: 50px;
+    color: #b12b24;
   }
 
-  #outnow h2:hover {
+  #outnow-bold:hover, #outnow-normal:hover {
     color: #760504;
   }
+
   
           /* Merch */
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -215,22 +211,6 @@
     border-top: 1px solid white;
   }
 
-  footer .left {
-    display: flex;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-  
-  }
-
-  footer .right {
-    display: flex;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-
-  }
-
   footer p {
     font-size: 1rem;
     color: #fbdc6a;
@@ -241,19 +221,27 @@
 
 /* Responsive Design */
 @media (max-width: 1200px) {
- 
-  #list1, #list2 {
-      font-size: 2rem;
+
+  h1 {
+    font-size: 4rem;
   }
- 
-  #outnow-normal {
-      font-size: 8rem;
+
+  #outnow-new { 
+    font-size: 3rem;
+  }
+
+  #outnow-normal { 
+    font-size: 8rem;
   }
 
   #outnow-bold {
-      font-size: 12rem;
+    font-size: 11rem;
   }
 
+  #outnow iframe {
+    width: 80%;
+  }
+  
   .merch-container {
       flex-direction: column;
       align-items: center;
@@ -263,19 +251,21 @@
     flex-direction: column;
     align-items: center;
   }
+
 }
 
 @media (max-width: 768px) {
-  #list1, #list2 {
-      font-size: 1.5rem;
-  }
-
-  #outnow-normal {
-      font-size: 6rem;
+  
+  #outnow-normal { 
+    font-size: 5rem;
   }
 
   #outnow-bold {
-      font-size: 8rem;
+    font-size: 7rem;
+  }
+
+  #outnow iframe {
+    width: 80%;
   }
 
   .merch-container {
@@ -290,17 +280,24 @@
 }
 
 @media (max-width: 480px) {
-  #list1, #list2 {
-      font-size: 1rem;
-  }
 
-  #outnow-normal {
-    font-size: 2rem;
+  #outnow-normal { 
+    font-size: 3rem;
   }
 
   #outnow-bold {
-      font-size: 4rem;
+    font-size: 5rem;
   }
+
+  #outnow iframe {
+    width: 80%;
+  }
+  
+  .merch-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
   .releases-container {
     flex-direction: column;
     align-items: center;
