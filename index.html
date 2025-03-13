@@ -19,18 +19,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 </head>
 
 <body>
+  <!-- Snipcart -->
+  <script>
+    window.SnipcartSettings = {
+        publicApiKey: 'NmMyNGI5NjItYmMyZS00YzE4LWIwNjctYWUxMDYwOTkzYjVkNjM4NzczMzA3OTk3Mjk3Mjk1',
+        loadStrategy: 'on-user-interaction',
+        modalStyle: "side",
+    };
+
+    (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+
+
     <section class="parallax" id="background1">
       <div class="content" id="banner">
+          
           <h1><a href="index.html">allyearlong</a></h1>
           <nav>
-            <h3><a href="#container1">Music</a></h3>
-            <h3><a href="https://www.facebook.com/allyearlongband" class="fa fa-facebook" target="_blank"></a></h3>
-            <h3><a href="https://www.instagram.com/allyearlongband" class="fa fa-instagram" target="_blank"></a></h3>
             <h3><a href="#container2">Merch</a></h3>
+            <h3><a href="#container1">Music</a></h3>
+            <h3><a href="https://www.facebook.com/allyearlongband" target="_blank"><i class="fa-brands fa-facebook"></i></a></h3>
+            <h3><a href="https://www.instagram.com/allyearlongband" target="_blank"><i class="fa-brands fa-instagram"></i></a></h3>
+            <h3 class="snipcart-checkout"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></h3>
           </nav>
       </div>
     </section>
@@ -40,14 +55,28 @@
           <h2>Merch Available Now</h2>
           <div class="merch-container">
               <div class="image-container">
-                  <img src="allyearlong-shirt1.png" alt="AllYearLong Shirt">
+                  <img src="allyearlong-shirt1.png" alt="allyearlong-shirt">
                   <p id="merchName">allyearlong Tshirt</p>
-                  <button><a href="#">Shop Now</a></button>
+
+                  <button class="snipcart-add-item"
+                  data-item-id="allyearlong-shirt"
+                  data-item-price="35.00"
+                  data-item-description="allyearlong logo shirt."
+                  data-item-image="allyearlong-shirt1.png"
+                  data-item-name="allyearlong Logo Shirt">Add To Cart</button>
+
               </div>
               <div class="image-container">
                   <img src="insictbh-shirt1.png" alt="INSICTBH Shirt">
                   <p id="merchName">INSICTBH Tshirt</p>
-                  <button><a href="#">Shop Now</a></button>
+
+                  <button class="snipcart-add-item"
+                  data-item-id="insictbh-shirt"
+                  data-item-price="40.00"
+                  data-item-description="allyearlong insictbh shirt."
+                  data-item-image="insictbh-shirt1.png"
+                  data-item-name="allyearlong INSICTBH Shirt">Add To Cart</button>
+
               </div>
           </div>
       </div>
@@ -92,8 +121,8 @@
   
     <footer>
         <p>allyearlong</p>
-        <p><a href="https://www.facebook.com/allyearlongband" class="fa fa-facebook" target="_blank"></a></p>
-        <p><a href="https://www.instagram.com/allyearlongband" class="fa fa-instagram" target="_blank"></a></p>
+        <p><a href="https://www.facebook.com/allyearlongband" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
+        <p><a href="https://www.instagram.com/allyearlongband" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
     </footer>
 </body>
 </html>
